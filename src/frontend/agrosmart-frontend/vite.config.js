@@ -7,9 +7,9 @@ import federation from '@originjs/vite-plugin-federation'
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
-  const chatRemoteUrl = env.VITE_CHAT_REMOTE_URL || 'http://localhost:5174/assets/remoteEntry.js'
-  const monitoreoRemoteUrl = env.VITE_MONITOREO_REMOTE_URL || 'http://localhost:5175/assets/remoteEntry.js'
-  const mercadosRemoteUrl = env.VITE_MERCADOS_REMOTE_URL || 'http://localhost:5176/assets/remoteEntry.js'
+  const chatRemoteUrl = env.VITE_CHAT_REMOTE_URL || 'https://agrosmart-insights-49vi4ufmq-21lenns-projects.vercel.app/assets/remoteEntry.js'
+  const monitoreoRemoteUrl = env.VITE_MONITOREO_REMOTE_URL || 'https://agrosmart-insights-nap8-2s8tqv4lu-21lenns-projects.vercel.app/assets/remoteEntry.js'
+  const mercadosRemoteUrl = env.VITE_MERCADOS_REMOTE_URL || 'https://agrosmart-insights-rg6m.vercel.app/assets/remoteEntry.js'
 
   return {
     plugins: [
